@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Tweets</h1>
+<%= link_to "New tweet", new_tweet_path %>
+<hr>
 
 <div id="tweets">
   <% @tweets.each do |tweet| %>
@@ -10,5 +12,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to "New tweet", new_tweet_path %>

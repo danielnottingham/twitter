@@ -6,7 +6,10 @@
 
   <p>
     <strong>User:</strong>
-    <%= tweet.user_id %>
+    <%= tweet.user.email %>
   </p>
 
+  <p>
+    <%= render "likes/like_button", likeable: tweet %>
+  </p>
 </div>
